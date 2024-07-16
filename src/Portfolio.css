@@ -1,0 +1,187 @@
+.portfolio {
+  text-align: center;
+
+  background-color: #05141E;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  margin: 0;
+  border-color: #3185FC;
+}
+
+.portfolio-header {
+  background-color: #05141E;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+
+  border-bottom: 0.125rem solid #3185FC;
+}
+
+.portfolio-header ul {
+  display: flex;
+  list-style: none;
+
+  padding: 0;
+}
+
+.portfolio-header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+
+  background: linear-gradient(to top,#05141E 0%, #05141E 50%, #3185FC 50%, #3185FC 100%);
+  background-size: 100% 200%;
+  background-position: 0 -100%;
+  transition: background-position 0.3s;
+  padding: 1.25rem 1.25rem;
+}
+
+.portfolio-header ul li a:hover {
+  background-position:0 0;
+  border-bottom: 0.125rem solid #ffffff;
+}
+
+.inicio {
+  padding: 4.688rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inicio a {
+  text-decoration: none;
+}
+
+.inicio .containerImagem img {
+  height: 16.25rem;
+  width: 16.25rem;
+
+  display: flex;
+  align-items: center;
+
+  margin-right: 3rem;
+
+  border-radius: 8.625rem;
+  border: 0.125rem solid #3185FC;
+}
+
+.inicio .containerApresentacao {
+  margin: auto 0;
+
+  text-align: left;
+}
+
+.inicio .containerApresentacao h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 2.188rem;
+
+  margin: 0;
+}
+
+.inicio .containerApresentacao h1 span {
+  color: #3185FC;
+}
+
+.inicio .containerApresentacao h2 {
+  font-size: 1.25rem;
+  color: #B1BDCE;
+  font-weight: 500;
+
+  margin: 0.875rem 0;
+}
+
+.inicio .containerApresentacao a button {
+  width: 8.875rem;
+  height: 2.375rem;
+  border-radius: 0.75rem;
+
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #023C8D;
+  color: #ffffff;
+
+  border: 0;
+  transition: all 0.2s;
+}
+
+.inicio .containerApresentacao a button:hover {
+  color: #023C8D;
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+.inicio .containerApresentacao a button svg {
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.inicio .containerContato {
+  display: flex;
+  justify-content: end;
+}
+
+.inicio .containerContato ul {
+  margin: auto 0;
+  padding: 0;
+
+  text-align: start;
+  list-style: none;
+}
+
+.inicio .containerContato ul li a {
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+  color: #B1BDCE;
+
+  transition: all 0.2s;
+}
+
+.inicio .containerContato ul li a:hover {
+  color: #ffffff;
+}
+
+.inicio .containerContato ul li a img, 
+.inicio .containerContato ul li a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  margin: 0.313rem 0.438rem;
+  color: #3185FC;
+}
+
+.sobre {
+  margin-top: 2.813rem;
+  margin-bottom: 4.688rem;
+}
+
+.sobre h1 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.sobre p {
+  font-size: 1rem;
+  line-height: 22px;
+  margin: 0;
+  color: #B1BDCE;
+}

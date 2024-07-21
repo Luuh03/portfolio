@@ -1,9 +1,20 @@
 import './Portfolio.css';
 import curriculo from './assets/files/Curriculo Luan Emidio de Queiroz.pdf'
 import fotoLuan from './assets/imgs/luanPicture.png';
-import githubIcon from './assets/imgs/githubIcon.png';
-import linkedinIcon from './assets/imgs/linkedinIcon.png';
-import whatsappIcon from './assets/imgs/whatsappIcon.png';
+
+import githubIcon from './assets/imgs/icons/github.png';
+import linkedinIcon from './assets/imgs/icons/linkedin.png';
+import whatsappIcon from './assets/imgs/icons/whatsapp.png';
+
+import html from './assets/imgs/icons/html5.png';
+import css from './assets/imgs/icons/css3.png';
+import javascript from './assets/imgs/icons/javascript.png';
+import react from './assets/imgs/icons/react.png';
+import csharp from './assets/imgs/icons/csharp.png';
+import java from './assets/imgs/icons/java.png';
+import php from './assets/imgs/icons/php.png';
+import netcore from './assets/imgs/icons/netcore.png';
+import mysql from './assets/imgs/icons/mysql.png';
 
 import { FaRegFileLines, FaRegEnvelope } from "react-icons/fa6";
 
@@ -47,7 +58,7 @@ function Portfolio() {
 
         </section>
 
-        <hr/>
+        <hr />
 
         <section className='sobre'>
           <h1>Sobre mim</h1>
@@ -66,7 +77,37 @@ function Portfolio() {
 
         </section>
 
-        <hr/>
+        <hr />
+
+        <section className='habilidades'>
+          <h1>Habilidades</h1>
+
+          <div className='containerHabilidades'>
+            <fieldset className='sessaoHabilidades'>
+              <legend>Front-end</legend>
+
+              <ul>
+                <li><img src={html} />HTML5</li>
+                <li><img src={css} />CSS3</li>
+                <li><img src={javascript} />JavaScript</li>
+                <li><img src={react} />React</li>
+              </ul>
+            </fieldset>
+
+            <fieldset className='sessaoHabilidades'>
+              <legend>Back-end</legend>
+
+              <ul>
+                <li><img src={csharp} />CSharp</li>
+                <li><img src={java} />Java</li>
+                <li><img src={php} />PHP</li>
+                <li><img src={netcore} />ASP.Net Core</li>
+                <li><img src={mysql} />MySQL</li>
+              </ul>
+            </fieldset>
+          </div>
+
+        </section>
       </main>
     </div>
   );

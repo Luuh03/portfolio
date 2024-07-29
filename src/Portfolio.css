@@ -187,15 +187,18 @@ section h1 {
 }
 
 .containerHabilidades {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 28rem 28rem;
+  gap: 1.80rem;
+
+  justify-content: space-around;
 }
 
 .sessaoHabilidades {
-  width: 27rem;
   padding: 1rem;
 
   display: flex;
+  align-items: center;
 
   border-radius: 1.75rem;
   border: 1px solid #3185FC;
@@ -212,8 +215,6 @@ section h1 {
 }
 
 .sessaoHabilidades ul {
-  height: 90px;
-
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -228,6 +229,8 @@ section h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  height: 76px;
 
   font-size: 1.25rem;
   color: #3185FC;

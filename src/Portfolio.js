@@ -105,6 +105,27 @@ function Portfolio() {
                 <li><img src={mysql} />MySQL</li>
               </ul>
             </fieldset>
+
+            <fieldset className='sessaoHabilidades'>
+              <legend>Ferramentas</legend>
+
+              <ul>
+                <li><img src={html} />HTML5</li>
+                <li><img src={css} />CSS3</li>
+                <li><img src={javascript} />JavaScript</li>
+                <li><img src={react} />React</li>
+              </ul>
+            </fieldset>
+
+            <fieldset className='sessaoHabilidades'>
+              <legend>Metodologias</legend>
+
+              <ul>
+                <li><img src={html} />HTML5</li>
+                <li><img src={css} />CSS3</li>
+              </ul>
+            </fieldset>
+
           </div>
 
         </section>

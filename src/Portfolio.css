@@ -188,13 +188,13 @@ section h1 {
 
 .containerHabilidades {
   display: grid;
-  grid-template-columns: 28rem 28rem;
+  grid-template-columns: 29rem 29rem;
   gap: 1.80rem;
 
   justify-content: space-around;
 }
 
-.sessaoHabilidades {
+.secaoHabilidades {
   padding: 1rem;
 
   display: flex;
@@ -204,7 +204,7 @@ section h1 {
   border: 1px solid #3185FC;
 }
 
-.sessaoHabilidades legend {
+.secaoHabilidades legend {
   font-size: 2rem;
   color: #3185FC;
 
@@ -214,7 +214,7 @@ section h1 {
   padding: 0 0.5rem;
 }
 
-.sessaoHabilidades ul {
+.secaoHabilidades ul {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -225,7 +225,7 @@ section h1 {
   margin: 0 auto;
 }
 
-.sessaoHabilidades ul li {
+.secaoHabilidades ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,7 +238,7 @@ section h1 {
   margin: 0.813rem ;
 }
 
-.sessaoHabilidades ul li img,
-.sessaoHabilidades ul li svg {
+.secaoHabilidades ul li img,
+.secaoHabilidades ul li svg {
   margin-bottom: 5px;
 }

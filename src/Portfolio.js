@@ -69,7 +69,7 @@ function Portfolio() {
 
         <hr id='sobre' />
 
-        <section className='sobre'>
+        <section className='secao sobre'>
           <h1>Sobre mim</h1>
 
           <p>
@@ -88,11 +88,11 @@ function Portfolio() {
 
         <hr id='habilidades' />
 
-        <section className='habilidades'>
+        <section className='secao habilidades'>
           <h1>Habilidades</h1>
 
           <div className='containerHabilidades'>
-            <fieldset className='secaoHabilidades'>
+            <fieldset className='frontend secaoHabilidades'>
               <legend>Front-end</legend>
 
               <ul>
@@ -103,7 +103,7 @@ function Portfolio() {
               </ul>
             </fieldset>
 
-            <fieldset className='secaoHabilidades'>
+            <fieldset className='backend secaoHabilidades'>
               <legend>Back-end</legend>
 
               <ul>
@@ -115,7 +115,7 @@ function Portfolio() {
               </ul>
             </fieldset>
 
-            <fieldset className='secaoHabilidades'>
+            <fieldset className='ferramentas secaoHabilidades'>
               <legend>Ferramentas</legend>
 
               <ul>
@@ -129,7 +129,7 @@ function Portfolio() {
               </ul>
             </fieldset>
 
-            <fieldset className='secaoHabilidades'>
+            <fieldset className='metodologias secaoHabilidades'>
               <legend>Metodologias</legend>
 
               <ul>
@@ -141,6 +141,8 @@ function Portfolio() {
           </div>
 
         </section>
+
+        <hr id='projetos' />
       </main>
     </div>
   );

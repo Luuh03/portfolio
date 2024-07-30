@@ -15,6 +15,15 @@ import java from './assets/imgs/icons/java.png';
 import php from './assets/imgs/icons/php.png';
 import netcore from './assets/imgs/icons/netcore.png';
 import mysql from './assets/imgs/icons/mysql.png';
+import figma from './assets/imgs/icons/figma.png';
+import git from './assets/imgs/icons/git.png'
+import visualStudio from './assets/imgs/icons/visualstudio.png';
+import jira from './assets/imgs/icons/jira.png';
+import eclipse from './assets/imgs/icons/eclipse.png';
+import vscode from './assets/imgs/icons/vscode.png';
+import scrum from './assets/imgs/icons/scrum.png';
+import kanban from './assets/imgs/icons/kanban.png';
+
 
 import { FaRegFileLines, FaRegEnvelope } from "react-icons/fa6";
 
@@ -24,18 +33,18 @@ function Portfolio() {
       <header className='portfolio-header'>
         <nav>
           <ul>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Experiência</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <section className='inicio'>
           <div className='containerImagem'>
-            <img src={fotoLuan} />
+            <img src={fotoLuan} alt='Foto Luan Queiroz' />
           </div>
 
           <div className='containerApresentacao'>
@@ -49,16 +58,16 @@ function Portfolio() {
 
           <div className='containerContato'>
             <ul>
-              <li><a href='https://github.com/Luuh03' target='_blank'><img src={githubIcon} /> Luuh03</a></li>
-              <li><a href='https://www.linkedin.com/in/luan-queiroz/' target='_blank'><img src={linkedinIcon} /> Luan Queiroz</a></li>
-              <li><a href='https://wa.me/5519995230386' target='_blank'><img src={whatsappIcon} /> (19)99523-0386</a></li>
+              <li><a href='https://github.com/Luuh03' target='_blank' rel='noreferrer'><img src={githubIcon} alt='Ícone GitHub' /> Luuh03</a></li>
+              <li><a href='https://www.linkedin.com/in/luan-queiroz/' target='_blank' rel='noreferrer'><img src={linkedinIcon} alt='Ícone LinkedIn' /> Luan Queiroz</a></li>
+              <li><a href='https://wa.me/5519995230386' target='_blank' rel='noreferrer'><img src={whatsappIcon} alt='Ícone WhatsApp' /> (19)99523-0386</a></li>
               <li><a href='mailto:luan.queiroz2003@gmail.com'><FaRegEnvelope /> luan.queiroz2003@gmail.com</a></li>
             </ul>
           </div>
 
         </section>
 
-        <hr />
+        <hr id='sobre' />
 
         <section className='sobre'>
           <h1>Sobre mim</h1>
@@ -77,52 +86,55 @@ function Portfolio() {
 
         </section>
 
-        <hr />
+        <hr id='habilidades' />
 
         <section className='habilidades'>
           <h1>Habilidades</h1>
 
           <div className='containerHabilidades'>
-            <fieldset className='sessaoHabilidades'>
+            <fieldset className='secaoHabilidades'>
               <legend>Front-end</legend>
 
               <ul>
-                <li><img src={html} />HTML5</li>
-                <li><img src={css} />CSS3</li>
-                <li><img src={javascript} />JavaScript</li>
-                <li><img src={react} />React</li>
+                <li><img src={html} alt='Ícone HTML5' />HTML5</li>
+                <li><img src={css} alt='Ícone CSS3' />CSS3</li>
+                <li><img src={javascript} alt='Ícone JavaScript' />JavaScript</li>
+                <li><img src={react} alt='Ícone React' />React</li>
               </ul>
             </fieldset>
 
-            <fieldset className='sessaoHabilidades'>
+            <fieldset className='secaoHabilidades'>
               <legend>Back-end</legend>
 
               <ul>
-                <li><img src={csharp} />CSharp</li>
-                <li><img src={java} />Java</li>
-                <li><img src={php} />PHP</li>
-                <li><img src={netcore} />ASP.Net Core</li>
-                <li><img src={mysql} />MySQL</li>
+                <li><img src={csharp} alt='Ícone CSharp' />CSharp</li>
+                <li><img src={java} alt='Ícone Java' />Java</li>
+                <li><img src={php} alt='Ícone PHP' />PHP</li>
+                <li><img src={netcore} alt='Ícone ASP.Net Core' />ASP.Net Core</li>
+                <li><img src={mysql} alt='Ícone MySQL' />MySQL</li>
               </ul>
             </fieldset>
 
-            <fieldset className='sessaoHabilidades'>
+            <fieldset className='secaoHabilidades'>
               <legend>Ferramentas</legend>
 
               <ul>
-                <li><img src={html} />HTML5</li>
-                <li><img src={css} />CSS3</li>
-                <li><img src={javascript} />JavaScript</li>
-                <li><img src={react} />React</li>
+                <li><img src={figma} alt='Ícone Figma' />Figma</li>
+                <li><img src={git} alt='Ícone Git' />Git</li>
+                <li><img src={githubIcon} alt='Ícone GitHub' />GitHub</li>
+                <li><img src={visualStudio} alt='Ícone Visual Studio' />Visual Studio</li>
+                <li><img src={jira} alt='Ícone Jira' />Jira</li>
+                <li><img src={eclipse} alt='Ícone Eclipse IDE' />Eclipse IDE</li>
+                <li><img src={vscode} alt='Ícone Visual Studio Code' />Visual Studio Code</li>
               </ul>
             </fieldset>
 
-            <fieldset className='sessaoHabilidades'>
+            <fieldset className='secaoHabilidades'>
               <legend>Metodologias</legend>
 
               <ul>
-                <li><img src={html} />HTML5</li>
-                <li><img src={css} />CSS3</li>
+                <li><img src={scrum} alt='Ícone sprint Scrum' />Scrum</li>
+                <li><img src={kanban} alt='Ícone quadro Kanban' />Kanban</li>
               </ul>
             </fieldset>
 

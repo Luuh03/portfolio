@@ -273,3 +273,33 @@ section h1 {
 .metodologias ul {
   justify-content: start;
 }
+
+.cardExperiencia {
+  width: 28.125rem;
+  height: 18.313rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  border: 1px solid #3185FC;
+  border-radius: 1.75rem;
+}
+
+.cardExperiencia .data {
+  background-color: #023C8D;
+  
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+
+  padding: 0.313rem 0.438rem;
+  border-radius: 0.375rem;
+}
+
+.cardExperiencia strong {
+  font-size: 1rem;
+  color: #3185FC;
+  font-weight: 600;
+}

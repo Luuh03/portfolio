@@ -2,6 +2,7 @@ import './Portfolio.css';
 import curriculo from './assets/files/Curriculo Luan Emidio de Queiroz.pdf'
 import fotoLuan from './assets/imgs/luanPicture.png';
 import citLogo from './assets/imgs/citLogo.png';
+import apexLogo from './assets/imgs/apexLogo.png';
 
 import githubIcon from './assets/imgs/icons/github.png';
 import linkedinIcon from './assets/imgs/icons/linkedin.png';
@@ -145,16 +146,29 @@ function Portfolio() {
 
         <hr id='experiencia' />
 
-        <section className='secao sobre'>
+        <section className='secao'>
           <h1>Experiência</h1>
 
-          <div className='cardExperiencia'>
-            <span className='data'>Fev/2022 - Mar/2023</span>
+          <div className='containerExperiencia'>
+            <div className='cardExperiencia'>
+              <span className='data'>Fev/2022 - Mar/2023</span>
 
-            <img src={citLogo} alt='Logo CI&T' />
-            <strong>Estagiario de Desenvolvimento</strong>
-            <p>Responsável por desenvolvimento de novas rotas em APIs, correção de código, testes unitários e injeção de dados.</p>
-            <p><span>Tecnologias:</span> ASP.Net Core, C#, SQL, API REST, AWS</p>
+              <img src={citLogo} alt='Logo CI&T' />
+              <strong>Estagiario de Desenvolvimento</strong>
+
+              <p>Responsável por desenvolvimento de novas rotas em APIs, correção de código, testes unitários e injeção de dados.</p>
+              <p><span>Tecnologias:</span> ASP.Net Core, C#, SQL, API REST, AWS</p>
+            </div>
+
+            <div className='cardExperiencia'>
+              <span className='data'>Mai/2024 - Jun/2024</span>
+
+              <img src={apexLogo} alt='Logo Apex America' />
+              <strong>Consultor de Atendimento Bilíngue (Inglês)</strong>
+
+              <p>Responsável por realizar atendimento em inglês de clientes por chat e ligação.</p>
+              <p><span>Competências:</span> Escrita e fala em inglês, resolução de problemas</p>
+            </div>
           </div>
 
         </section>

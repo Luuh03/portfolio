@@ -6,7 +6,6 @@ import apexLogo from './assets/imgs/apexLogo.png';
 
 import githubIcon from './assets/imgs/icons/github.png';
 import linkedinIcon from './assets/imgs/icons/linkedin.png';
-import whatsappIcon from './assets/imgs/icons/whatsapp.png';
 
 import html from './assets/imgs/icons/html5.png';
 import css from './assets/imgs/icons/css3.png';
@@ -26,6 +25,10 @@ import vscode from './assets/imgs/icons/vscode.png';
 import scrum from './assets/imgs/icons/scrum.png';
 import kanban from './assets/imgs/icons/kanban.png';
 
+import wedfy from './assets/imgs/projects/wedfy.png';
+import naturezaViva from './assets/imgs/projects/naturezaViva.png';
+import estoque from './assets/imgs/projects/estoque.png';
+import agenda from './assets/imgs/projects/agenda.png';
 
 import { FaRegFileLines, FaRegEnvelope } from "react-icons/fa6";
 
@@ -60,10 +63,9 @@ function Portfolio() {
 
           <div className='containerContato'>
             <ul>
-              <li><a href='https://github.com/Luuh03' target='_blank' rel='noreferrer'><img src={githubIcon} alt='Ícone GitHub' /> Luuh03</a></li>
-              <li><a href='https://www.linkedin.com/in/luan-queiroz/' target='_blank' rel='noreferrer'><img src={linkedinIcon} alt='Ícone LinkedIn' /> Luan Queiroz</a></li>
-              <li><a href='https://wa.me/5519995230386' target='_blank' rel='noreferrer'><img src={whatsappIcon} alt='Ícone WhatsApp' /> (19)99523-0386</a></li>
-              <li><a href='mailto:luan.queiroz2003@gmail.com'><FaRegEnvelope /> luan.queiroz2003@gmail.com</a></li>
+              <li><a href='https://github.com/Luuh03' target='_blank' rel='noreferrer'><img src={githubIcon} alt='Ícone GitHub' />Luuh03</a></li>
+              <li><a href='https://www.linkedin.com/in/luan-queiroz/' target='_blank' rel='noreferrer'><img src={linkedinIcon} alt='Ícone LinkedIn' />Luan Queiroz</a></li>
+              <li><a href='mailto:luan.queiroz2003@gmail.com'><FaRegEnvelope />luan.queiroz2003@gmail.com</a></li>
             </ul>
           </div>
 
@@ -174,6 +176,37 @@ function Portfolio() {
         </section>
 
         <hr id='projetos' />
+
+        <section className='secao'>
+          <h1>Projetos</h1>
+
+          <div className='containerProjetos'>
+
+            <div className='cardProjeto'>
+              <div className='imagemProjeto' style={{ backgroundImage: `url(${wedfy})` }} ></div>
+              <h2>WedFY</h2>
+            </div>
+
+            <div className='cardProjeto'>
+              <div className='imagemProjeto' style={{ backgroundImage: `url(${naturezaViva})` }} ></div>
+              <h2>Natureza Viva</h2>
+            </div>
+
+            <div className='cardProjeto'>
+              <div className='imagemProjeto' style={{ backgroundImage: `url(${estoque})` }} ></div>
+              <h2>App Estoque</h2>
+            </div>
+
+            <div className='cardProjeto'>
+              <div className='imagemProjeto' style={{ backgroundImage: `url(${agenda})` }} ></div>
+              <h2>App Agenda</h2>
+            </div>
+
+          </div>
+
+        </section>
+
+        <hr id='contato' />
       </main>
     </div>
   );

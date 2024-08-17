@@ -184,22 +184,26 @@ function Portfolio() {
 
             <div className='cardProjeto'>
               <div className='imagemProjeto' style={{ backgroundImage: `url(${wedfy})` }} ></div>
-              <h2>WedFY</h2>
+              <h2 className='nomeProjeto'>WedFY</h2>
+              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
             </div>
 
             <div className='cardProjeto'>
               <div className='imagemProjeto' style={{ backgroundImage: `url(${naturezaViva})` }} ></div>
-              <h2>Natureza Viva</h2>
+              <h2 className='nomeProjeto'>Natureza Viva</h2>
+              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
             </div>
 
             <div className='cardProjeto'>
               <div className='imagemProjeto' style={{ backgroundImage: `url(${estoque})` }} ></div>
-              <h2>App Estoque</h2>
+              <h2 className='nomeProjeto'>App Estoque</h2>
+              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
             </div>
 
             <div className='cardProjeto'>
               <div className='imagemProjeto' style={{ backgroundImage: `url(${agenda})` }} ></div>
-              <h2>App Agenda</h2>
+              <h2 className='nomeProjeto'>App Agenda</h2>
+              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
             </div>
 
           </div>

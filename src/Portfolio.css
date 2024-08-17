@@ -374,6 +374,18 @@ section h1 {
   background-position: 100% 100%;
 }
 
+.cardProjeto .verDetalhes {
+  display: none;
+}
+
+.cardProjeto:hover .nomeProjeto {
+  display: none;
+}
+
+.cardProjeto:hover .verDetalhes {
+  display: inline;
+}
+
 @media only screen and (max-width: 1024px) {
   .inicio {
     padding: 4.688rem 0;

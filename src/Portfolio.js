@@ -182,35 +182,62 @@ function Portfolio() {
 
           <div className='containerProjetos'>
 
-            <div className='cardProjeto'>
-              <div className='imagemProjeto' style={{ backgroundImage: `url(${wedfy})` }} ></div>
-              <h2 className='nomeProjeto'>WedFY</h2>
-              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
-            </div>
+            <a href='https://github.com/Luuh03/Frontend-WedFY' target='_blank' rel='noreferrer'>
+              <div className='cardProjeto'>
+                <div className='imagemProjeto' style={{ backgroundImage: `url(${wedfy})` }} ></div>
+                <h2 className='nomeProjeto'>WedFY</h2>
+                <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
+              </div>
+            </a>
 
-            <div className='cardProjeto'>
-              <div className='imagemProjeto' style={{ backgroundImage: `url(${naturezaViva})` }} ></div>
-              <h2 className='nomeProjeto'>Natureza Viva</h2>
-              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
-            </div>
+            <a href='https://github.com/Luuh03/natureza-viva' target='_blank' rel='noreferrer'>
+              <div className='cardProjeto'>
+                <div className='imagemProjeto' style={{ backgroundImage: `url(${naturezaViva})` }} ></div>
+                <h2 className='nomeProjeto'>Natureza Viva</h2>
+                <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
+              </div>
 
-            <div className='cardProjeto'>
-              <div className='imagemProjeto' style={{ backgroundImage: `url(${estoque})` }} ></div>
-              <h2 className='nomeProjeto'>App Estoque</h2>
-              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
-            </div>
+            </a>
 
-            <div className='cardProjeto'>
-              <div className='imagemProjeto' style={{ backgroundImage: `url(${agenda})` }} ></div>
-              <h2 className='nomeProjeto'>App Agenda</h2>
-              <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
-            </div>
+            <a href='https://github.com/Luuh03/App-Estoque-C-Sharp' target='_blank' rel='noreferrer'>
+              <div className='cardProjeto'>
+                <div className='imagemProjeto' style={{ backgroundImage: `url(${estoque})` }} ></div>
+                <h2 className='nomeProjeto'>App Estoque</h2>
+                <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
+              </div>
+            </a>
+
+            <a href='https://github.com/Luuh03/App-Agenda-C-Sharp' target='_blank' rel='noreferrer'>
+              <div className='cardProjeto'>
+                <div className='imagemProjeto' style={{ backgroundImage: `url(${agenda})` }} ></div>
+                <h2 className='nomeProjeto'>App Agenda</h2>
+                <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
+              </div>
+            </a>
 
           </div>
 
         </section>
 
         <hr id='contato' />
+
+        <section className='secao'>
+          <h1>Contato</h1>
+
+          <div className='containerContato'>
+            <ul>
+              <li><a href='mailto:luan.queiroz2003@gmail.com'><FaRegEnvelope /><span>E-Mail</span>luan.queiroz2003@gmail.com</a></li>
+              <li><a href='https://www.linkedin.com/in/luan-queiroz/' target='_blank' rel='noreferrer'><img src={linkedinIcon} alt='Ícone LinkedIn' /><span>LinkedIn</span>Luan Queiroz</a></li>
+              <li><a href='https://github.com/Luuh03' target='_blank' rel='noreferrer'><img src={githubIcon} alt='Ícone GitHub' /><span>GitHub</span>Luuh03</a></li>
+            </ul>
+          </div>
+
+        </section>
+
+        <footer>
+          <p>© 2024 Luan Queiroz | Todos os direitos reservados.</p>
+        </footer>
+
       </main>
     </div>
   );

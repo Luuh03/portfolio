@@ -333,10 +333,11 @@ section h1 {
 
 .containerProjetos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+  grid-template-columns: repeat(auto-fit, max(21.875rem));
   grid-gap: 2.25rem;
   
   justify-items: center;
+  justify-content: center;
 }
 
 .containerProjetos div {
@@ -348,7 +349,7 @@ section h1 {
   background-repeat: no-repeat;
   background-size: 100% 200%;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.4s;
   border-radius: 1.688rem 0px;
   border: 1px solid #3185FC;
 }
@@ -371,6 +372,11 @@ section h1 {
 }
 
 .containerProjetos div:hover {
+  height: 11.475rem;
+  width: 22.375rem;
+
+  margin-bottom: -.5rem;
+
   background-position: 100% 100%;
 }
 
@@ -384,6 +390,59 @@ section h1 {
 
 .cardProjeto:hover .verDetalhes {
   display: inline;
+}
+
+.secao .containerContato ul li a img, 
+.secao .containerContato ul li a svg {
+  width: 3.125rem;
+  height: 3.125rem;
+
+  margin: 0.313rem 0.438rem;
+  color: #3185FC;
+}
+
+.secao .containerContato ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  padding: 0;
+}
+
+.secao .containerContato ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.563rem;
+
+  color: #B1BDCE;
+  font-weight: 500;
+  font-size: 1.125rem;
+
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.secao .containerContato ul li a span {
+  color: #3185FC;
+  font-size: 1.25rem;
+  margin-top: .3rem;
+}
+
+.secao .containerContato ul li a:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1024px) {

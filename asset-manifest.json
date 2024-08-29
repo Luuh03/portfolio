@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio-Luan/static/css/main.14e9a35d.css",
-    "main.js": "/Portfolio-Luan/static/js/main.dddae545.js",
+    "main.js": "/Portfolio-Luan/static/js/main.8e2306d5.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio-Luan/static/js/453.1407b060.chunk.js",
     "static/media/luanPicture.png": "/Portfolio-Luan/static/media/luanPicture.82e08c74d6dbb7c56e64.png",
-    "static/media/Curriculo Luan Emidio de Queiroz.pdf": "/Portfolio-Luan/static/media/Curriculo Luan Emidio de Queiroz.ff8c7069057d6e96300c.pdf",
+    "static/media/Curriculo Luan Emidio de Queiroz.pdf": "/Portfolio-Luan/static/media/Curriculo Luan Emidio de Queiroz.2ff68e2f00e9c4caced0.pdf",
     "static/media/wedfy.png": "/Portfolio-Luan/static/media/wedfy.4f8a7382c3f60fb863c1.png",
     "static/media/agenda.png": "/Portfolio-Luan/static/media/agenda.a020b7fd82ecce4b0c6f.png",
     "index.html": "/Portfolio-Luan/index.html",
     "main.14e9a35d.css.map": "/Portfolio-Luan/static/css/main.14e9a35d.css.map",
-    "main.dddae545.js.map": "/Portfolio-Luan/static/js/main.dddae545.js.map",
+    "main.8e2306d5.js.map": "/Portfolio-Luan/static/js/main.8e2306d5.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio-Luan/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14e9a35d.css",
-    "static/js/main.dddae545.js"
+    "static/js/main.8e2306d5.js"
   ]
 }

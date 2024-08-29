@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './Portfolio.css';
 import curriculo from './assets/files/Curriculo Luan Emidio de Queiroz.pdf'
 import fotoLuan from './assets/imgs/luanPicture.png';
@@ -30,20 +32,34 @@ import naturezaViva from './assets/imgs/projects/naturezaViva.png';
 import estoque from './assets/imgs/projects/estoque.png';
 import agenda from './assets/imgs/projects/agenda.png';
 
-import { FaRegFileLines, FaRegEnvelope } from "react-icons/fa6";
+import { FaRegFileLines, FaRegEnvelope, FaBars, FaXmark } from "react-icons/fa6";
 
 function Portfolio() {
+  const [abreMenu, setAbreMenu] = useState(false);
+
+  function FechaMenuMobile() {
+    setAbreMenu(false);
+  }
+
   return (
     <div className='portfolio'>
       <header className='portfolio-header'>
         <nav>
-          <ul>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+          <div className='mobile' onClick={() => {
+            setAbreMenu(!abreMenu);
+          }}>
+            <FaBars id='abrir' />
+            <FaXmark id='fechar' />
+          </div>
+
+          <ul className={abreMenu ? "open" : ""}>
+            <li><a href="#sobre" onClick={FechaMenuMobile}>Sobre mim</a></li>
+            <li><a href="#habilidades" onClick={FechaMenuMobile}>Habilidades</a></li>
+            <li><a href="#experiencia" onClick={FechaMenuMobile}>Experiência</a></li>
+            <li><a href="#projetos" onClick={FechaMenuMobile}>Projetos</a></li>
+            <li><a href="#contato" onClick={FechaMenuMobile}>Contato</a></li>
           </ul>
+
         </nav>
       </header>
       <main>

@@ -18,33 +18,52 @@ hr {
   background-color: #05141E;
 
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 1.25rem;
 
   border-bottom: 0.125rem solid #3185FC;
 }
 
-.portfolio-header ul {
+.portfolio-header nav {
+  display: flex;
+}
+
+.portfolio-header nav .mobile {
+  position: absolute;
+  top: .9rem;
+  right: 1rem;
+  flex-direction: column;
+
+}
+
+.portfolio-header nav .mobile svg {
+  display: none;
+  height: 2rem;
+  width: 2rem;
+
+  color: #ffffff;
+}
+
+.portfolio-header nav ul {
   display: flex;
   list-style: none;
 
   padding: 0;
 }
 
-.portfolio-header ul li a {
+.portfolio-header nav ul li a {
   text-decoration: none;
   color: #ffffff;
 
-  background: linear-gradient(to top,#05141E 0%, #05141E 50%, #3185FC 50%, #3185FC 100%);
+  background: linear-gradient(to top, #05141E 0%, #05141E 50%, #3185FC 50%, #3185FC 100%);
   background-size: 100% 200%;
   background-position: 0 -100%;
   transition: background-position 0.3s;
   padding: 1.25rem 1.25rem;
 }
 
-.portfolio-header ul li a:hover {
-  background-position:0 0;
+.portfolio-header nav ul li a:hover {
+  background-position: 0 0;
   border-bottom: 0.125rem solid #ffffff;
 }
 
@@ -157,7 +176,7 @@ hr {
   color: #ffffff;
 }
 
-.inicio .containerContato ul li a img, 
+.inicio .containerContato ul li a img,
 .inicio .containerContato ul li a svg {
   width: 1.5rem;
   height: 1.5rem;
@@ -206,7 +225,7 @@ section h1 {
 .containerHabilidades {
   display: grid;
   grid-template-columns: 29rem 29rem;
-  grid-template-areas: 
+  grid-template-areas:
     "frontend backend"
     "ferramentas backend"
     "ferramentas metodologias";
@@ -240,7 +259,7 @@ section h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
   list-style: none;
 
   padding: 0;
@@ -257,7 +276,7 @@ section h1 {
   font-size: 1.25rem;
   color: #3185FC;
 
-  margin: 0.813rem ;
+  margin: 0.813rem;
 }
 
 .secaoHabilidades ul li img,
@@ -295,7 +314,7 @@ section h1 {
 
 .cardExperiencia .data {
   background-color: #023C8D;
-  
+
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
@@ -335,7 +354,7 @@ section h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, max(21.875rem));
   grid-gap: 2.25rem;
-  
+
   justify-items: center;
   justify-content: center;
 }
@@ -345,7 +364,7 @@ section h1 {
   height: 10.975rem;
   width: 21.875rem;
 
-  background: linear-gradient(to top, rgba(233, 233, 233, 0.1) 0%, rgba(233, 233, 233, 0.1) 50%, rgba(255,255,255,0.4) 100%);
+  background: linear-gradient(to top, rgba(233, 233, 233, 0.1) 0%, rgba(233, 233, 233, 0.1) 50%, rgba(255, 255, 255, 0.4) 100%);
   background-repeat: no-repeat;
   background-size: 100% 200%;
   cursor: pointer;
@@ -392,7 +411,7 @@ section h1 {
   display: inline;
 }
 
-.secao .containerContato ul li a img, 
+.secao .containerContato ul li a img,
 .secao .containerContato ul li a svg {
   width: 3.125rem;
   height: 3.125rem;
@@ -462,19 +481,19 @@ footer p {
     margin-top: 2.813rem;
     justify-content: left;
   }
-  
+
   .containerHabilidades {
     grid-template-columns: 29rem;
-    grid-template-areas: 
+    grid-template-areas:
       "frontend"
       "backend"
       "backend"
       "ferramentas"
-      "ferramentas" 
+      "ferramentas"
       "metodologias";
-  
+
     gap: 1.80rem;
-  
+
     justify-content: center;
     margin-top: 50px;
   }
@@ -482,5 +501,111 @@ footer p {
   .containerExperiencia {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolio-header {
+    height: 3.75rem;
+
+    justify-content: end;
+  }
+
+  .portfolio-header nav {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .portfolio-header nav ul {
+    display: none;
+    width: 100vw;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 3.75rem;
+  }
+
+  .portfolio-header nav ul.open {
+    display: flex;
+  }
+
+  .portfolio-header nav ul li {
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio-header nav ul li a {
+    width: 100vw;
+  }
+  
+  .portfolio-header nav .mobile #abrir {
+    display: flex;
+  }
+
+  .portfolio-header nav .mobile #fechar {
+    display: none;
+  }
+
+  .inicio {
+    padding: 4.688rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+  }
+
+  .inicio .containerImagem {
+    width: 16.25rem;
+  }
+
+  .inicio .containerImagem img {
+    height: 15.4rem;
+    width: 15.4rem;
+    margin: 0;
+  }
+
+  .inicio .containerApresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 2rem;
+  }
+
+  .containerHabilidades {
+    grid-template-columns: 1fr;
+  }
+
+  .secaoHabilidades ul {
+    justify-content: space-around;
+  }
+
+  .cardExperiencia {
+    width: 13rem;
+  }
+
+  .containerProjetos .cardProjeto {
+    height: 8rem;
+    width: 16rem;
+  }
+
+  .containerProjetos div:hover {
+    height: 9rem;
+    width: 19rem;
+
+    margin-bottom: -1rem;
+  }
+
+  .containerProjetos h2 {
+    top: 4rem;
+  }
+
+  .cardProjeto:hover h2 {
+    top: 2.3rem;
+  }
+
+  .secao .containerContato ul {
+    flex-direction: column;
   }
 }

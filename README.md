@@ -2,26 +2,23 @@
 
 Este projeto de portfólio foi desenvolvido com [Create React App](https://github.com/facebook/create-react-app).
 
-## Sumário 🗒️
-
-[TOC]
-
 ## Seções do projeto 📚
 
 Este projeto é constituído pelas seguintes seções:
 
-- Inicio: Breve apresentação de meios de contato e download de currículo
-- Sobre mim: Descrição sobre quem eu sou
-- Habilidades: Listo algumas das tecnologias e ferramentas que mais tenho conhecimentos
-- Experiência: Abordo sobre minhas experiências profissionais
-- Projetos: Principais projetos que atuei no desenvolvimento
-- Contato: Apresentação mais detalhada de meios de contato
+- Inicio: Breve apresentação de meios de contato e download de currículo;
+- Sobre mim: Descrição sobre quem eu sou;
+- Habilidades: Listo algumas das tecnologias e ferramentas que mais tenho conhecimentos;
+- Experiência: Abordo sobre minhas experiências profissionais;
+- Projetos: Principais projetos que atuei no desenvolvimento;
+- Contato: Apresentação mais detalhada de meios de contato.
 
 ## Tecnologias ⌨️
 
-- HTML
-- CSS
-- JavaScript
+- HTML;
+- CSS;
+- JavaScript;
+- React.
 
 ## Ferramentas utilizadas 🛠️
 

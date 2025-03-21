@@ -6,26 +6,8 @@ import fotoLuan from './assets/imgs/luanPicture.png';
 import citLogo from './assets/imgs/citLogo.png';
 import apexLogo from './assets/imgs/apexLogo.png';
 
-import githubIcon from './assets/imgs/icons/github.png';
+import githubIcon from './assets/imgs/icons/11icon_github.png';
 import linkedinIcon from './assets/imgs/icons/linkedin.png';
-
-import html from './assets/imgs/icons/html5.png';
-import css from './assets/imgs/icons/css3.png';
-import javascript from './assets/imgs/icons/javascript.png';
-import react from './assets/imgs/icons/react.png';
-import csharp from './assets/imgs/icons/csharp.png';
-import java from './assets/imgs/icons/java.png';
-import php from './assets/imgs/icons/php.png';
-import netcore from './assets/imgs/icons/netcore.png';
-import mysql from './assets/imgs/icons/mysql.png';
-import figma from './assets/imgs/icons/figma.png';
-import git from './assets/imgs/icons/git.png'
-import visualStudio from './assets/imgs/icons/visualstudio.png';
-import jira from './assets/imgs/icons/jira.png';
-import eclipse from './assets/imgs/icons/eclipse.png';
-import vscode from './assets/imgs/icons/vscode.png';
-import scrum from './assets/imgs/icons/scrum.png';
-import kanban from './assets/imgs/icons/kanban.png';
 
 import wedfy from './assets/imgs/projects/wedfy.png';
 import naturezaViva from './assets/imgs/projects/naturezaViva.png';
@@ -35,6 +17,13 @@ import agenda from './assets/imgs/projects/agenda.png';
 import { FaRegFileLines, FaRegEnvelope, FaBars, FaXmark } from "react-icons/fa6";
 
 function Portfolio() {
+
+  const importIcones = (r) => {
+    return r.keys().map(r)
+  }
+
+  const icones = importIcones(require.context('./assets/imgs/icons', false, /\.png$/));
+
   const [abreMenu, setAbreMenu] = useState(false);
 
   function FechaMenuMobile() {
@@ -116,10 +105,10 @@ function Portfolio() {
               <legend>Front-end</legend>
 
               <ul>
-                <li><img src={html} alt='Ícone HTML5' />HTML5</li>
-                <li><img src={css} alt='Ícone CSS3' />CSS3</li>
-                <li><img src={javascript} alt='Ícone JavaScript' />JavaScript</li>
-                <li><img src={react} alt='Ícone React' />React</li>
+                <li><img src={icones[0]} alt='Ícone HTML5' />HTML5</li>
+                <li><img src={icones[1]} alt='Ícone CSS3' />CSS3</li>
+                <li><img src={icones[2]} alt='Ícone JavaScript' />JavaScript</li>
+                <li><img src={icones[3]} alt='Ícone React' />React</li>
               </ul>
             </fieldset>
 
@@ -127,11 +116,11 @@ function Portfolio() {
               <legend>Back-end</legend>
 
               <ul>
-                <li><img src={csharp} alt='Ícone CSharp' />CSharp</li>
-                <li><img src={java} alt='Ícone Java' />Java</li>
-                <li><img src={php} alt='Ícone PHP' />PHP</li>
-                <li><img src={netcore} alt='Ícone ASP.Net Core' />ASP.Net Core</li>
-                <li><img src={mysql} alt='Ícone MySQL' />MySQL</li>
+                <li><img src={icones[4]} alt='Ícone CSharp' />CSharp</li>
+                <li><img src={icones[5]} alt='Ícone Java' />Java</li>
+                <li><img src={icones[6]} alt='Ícone PHP' />PHP</li>
+                <li><img src={icones[7]} alt='Ícone ASP.Net Core' />ASP.Net Core</li>
+                <li><img src={icones[8]} alt='Ícone MySQL' />MySQL</li>
               </ul>
             </fieldset>
 
@@ -139,13 +128,13 @@ function Portfolio() {
               <legend>Ferramentas</legend>
 
               <ul>
-                <li><img src={figma} alt='Ícone Figma' />Figma</li>
-                <li><img src={git} alt='Ícone Git' />Git</li>
-                <li><img src={githubIcon} alt='Ícone GitHub' />GitHub</li>
-                <li><img src={visualStudio} alt='Ícone Visual Studio' />Visual Studio</li>
-                <li><img src={jira} alt='Ícone Jira' />Jira</li>
-                <li><img src={eclipse} alt='Ícone Eclipse IDE' />Eclipse IDE</li>
-                <li><img src={vscode} alt='Ícone Visual Studio Code' />Visual Studio Code</li>
+                <li><img src={icones[9]} alt='Ícone Figma' />Figma</li>
+                <li><img src={icones[10]} alt='Ícone Git' />Git</li>
+                <li><img src={icones[11]} alt='Ícone GitHub' />GitHub</li>
+                <li><img src={icones[12]} alt='Ícone Visual Studio' />Visual Studio</li>
+                <li><img src={icones[13]} alt='Ícone Jira' />Jira</li>
+                <li><img src={icones[14]} alt='Ícone Eclipse IDE' />Eclipse IDE</li>
+                <li><img src={icones[15]} alt='Ícone Visual Studio Code' />Visual Studio Code</li>
               </ul>
             </fieldset>
 
@@ -153,8 +142,8 @@ function Portfolio() {
               <legend>Metodologias</legend>
 
               <ul>
-                <li><img src={scrum} alt='Ícone sprint Scrum' />Scrum</li>
-                <li><img src={kanban} alt='Ícone quadro Kanban' />Kanban</li>
+                <li><img src={icones[16]} alt='Ícone sprint Scrum' />Scrum</li>
+                <li><img src={icones[17]} alt='Ícone quadro Kanban' />Kanban</li>
               </ul>
             </fieldset>
 

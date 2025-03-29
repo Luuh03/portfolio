@@ -1,34 +1,37 @@
 import { useState } from 'react';
+import { FaRegFileLines, FaRegEnvelope, FaBars, FaXmark } from "react-icons/fa6";
+import { Box, Button, Fade, Modal, Typography, Backdrop } from '@mui/material';
 
 import './Portfolio.css';
-import curriculo from './assets/files/Curriculo Luan Emidio de Queiroz.pdf'
+import curriculo from './assets/files/Curriculo Luan Emidio de Queiroz.pdf';
+
 import fotoLuan from './assets/imgs/luanPicture.png';
 import citLogo from './assets/imgs/citLogo.png';
 import apexLogo from './assets/imgs/apexLogo.png';
-
 import githubIcon from './assets/imgs/icons/11icon_github.png';
 import linkedinIcon from './assets/imgs/icons/linkedin.png';
-
 import wedfy from './assets/imgs/projects/wedfy.png';
 import naturezaViva from './assets/imgs/projects/naturezaViva.png';
 import estoque from './assets/imgs/projects/estoque.png';
 import agenda from './assets/imgs/projects/agenda.png';
 
-import { FaRegFileLines, FaRegEnvelope, FaBars, FaXmark } from "react-icons/fa6";
-
 function Portfolio() {
-
+  // importação dos ícones da seção Habilidades
   const importIcones = (r) => {
     return r.keys().map(r)
   }
-
   const icones = importIcones(require.context('./assets/imgs/icons', false, /\.png$/));
 
+  // controle do menu na versão mobile
   const [abreMenu, setAbreMenu] = useState(false);
-
   function FechaMenuMobile() {
     setAbreMenu(false);
   }
+
+  //
+  const [abreModal, setAbreModal] = useState(false);
+  const abrirModal = () => setAbreModal(true);
+  const fecharModal = () => setAbreModal(false);
 
   return (
     <div className='portfolio'>
@@ -187,41 +190,69 @@ function Portfolio() {
 
           <div className='containerProjetos'>
 
-            <a href='https://github.com/Luuh03/Frontend-WedFY' target='_blank' rel='noreferrer'>
+            <Button onClick={abrirModal} >
               <div className='cardProjeto'>
                 <div className='imagemProjeto' style={{ backgroundImage: `url(${wedfy})` }} ></div>
                 <h2 className='nomeProjeto'>WedFY</h2>
                 <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
               </div>
-            </a>
+            </Button>
 
-            <a href='https://github.com/Luuh03/natureza-viva' target='_blank' rel='noreferrer'>
+            <Modal
+              open={abreModal}
+              onClose={fecharModal}
+              closeAfterTransition
+              slots={{ backdrop: Backdrop }}
+              slotProps={{
+                backdrop: {
+                  timeout: 500,
+                },
+              }}
+            >
+              <Fade in={abreModal}>
+                <Box className='modalProjeto'>
+                  <Typography variant="h1" className='tituloModal'>
+                    Wedfy
+                  </Typography>
+                  <Typography className='descricaoModal'>
+                    O Wedfy é uma aplicação web que desenvolvi como a primeira versão de uma plataforma 
+                    de <i>freelancing</i> onde desenvolvedores tem acesso a recomendações de notícias e conteúdos 
+                    para ajudar a se desenvolver profissionalmente além de se inscrever para desenvolver projetos.
+                  </Typography>
+                  <Typography className='descricaoModal'>
+                    O Wedfy é uma aplicação web que desenvolvi como a primeira versão de uma plataforma 
+                    de <i>freelancing</i> onde desenvolvedores tem acesso a recomendações de notícias e conteúdos 
+                    para ajudar a se desenvolver profissionalmente além de se inscrever para desenvolver projetos.
+                  </Typography>
+                </Box>
+              </Fade>
+            </Modal>
+
+            <Button >
               <div className='cardProjeto'>
                 <div className='imagemProjeto' style={{ backgroundImage: `url(${naturezaViva})` }} ></div>
                 <h2 className='nomeProjeto'>Natureza Viva</h2>
                 <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
               </div>
 
-            </a>
+            </Button>
 
-            <a href='https://github.com/Luuh03/App-Estoque-C-Sharp' target='_blank' rel='noreferrer'>
+            <Button >
               <div className='cardProjeto'>
                 <div className='imagemProjeto' style={{ backgroundImage: `url(${estoque})` }} ></div>
                 <h2 className='nomeProjeto'>App Estoque</h2>
                 <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
               </div>
-            </a>
+            </Button>
 
-            <a href='https://github.com/Luuh03/App-Agenda-C-Sharp' target='_blank' rel='noreferrer'>
+            <Button >
               <div className='cardProjeto'>
                 <div className='imagemProjeto' style={{ backgroundImage: `url(${agenda})` }} ></div>
                 <h2 className='nomeProjeto'>App Agenda</h2>
                 <h2 className='verDetalhes'>Ver detalhes do projeto</h2>
               </div>
-            </a>
-
+            </Button>
           </div>
-
         </section>
 
         <hr id='contato' />
@@ -236,7 +267,6 @@ function Portfolio() {
               <li><a href='https://github.com/Luuh03' target='_blank' rel='noreferrer'><img src={githubIcon} alt='Ícone GitHub' /><span>GitHub</span>Luuh03</a></li>
             </ul>
           </div>
-
         </section>
 
         <footer>

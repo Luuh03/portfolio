@@ -353,10 +353,22 @@ section h1 {
 .containerProjetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, max(21.875rem));
-  grid-gap: 2.25rem;
+  grid-gap: 2.7rem;
 
   justify-items: center;
   justify-content: center;
+}
+
+.containerProjetos Button {
+  height: 10.975rem;
+  width: 21.875rem;
+  padding: 0;
+  border-radius: 1.688rem 0px;
+
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  text-transform: none;
 }
 
 .containerProjetos div {
@@ -384,18 +396,16 @@ section h1 {
 
 .containerProjetos h2 {
   position: absolute;
-  top: 6.9rem;
+  top: 7.8rem;
   left: 1rem;
+  margin: 0;
+
+  font-size: 24px;
   color: #ffffff;
   font-weight: 600;
 }
 
 .containerProjetos div:hover {
-  height: 11.475rem;
-  width: 22.375rem;
-
-  margin-bottom: -.5rem;
-
   background-position: 100% 100%;
 }
 
@@ -409,6 +419,41 @@ section h1 {
 
 .cardProjeto:hover .verDetalhes {
   display: inline;
+}
+
+.modalProjeto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 30rem;
+  width: 55rem;
+  padding: 2.5rem 3rem;
+  border-radius: 3rem 0px;
+
+  background-color: #05141E;
+  color: #fff;
+  border: 1px solid #3185FC;
+}
+
+.modalProjeto h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: .7rem;
+
+  border-bottom: 1px solid #3185FC;
+}
+
+.modalProjeto p {
+  padding: 0.5rem;
+}
+
+.modalProjeto h1,
+.modalProjeto p {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 .secao .containerContato ul li a img,

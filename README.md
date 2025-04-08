@@ -27,5 +27,5 @@ Este projeto é constituído pelas seguintes seções:
 
 ## Link de acesso 🔗
 
-Você pode acessar o portfólio clicando [aqui](https://luuh03.github.io/Portfolio-Luan/).
+Você pode acessar o portfólio clicando [aqui](https://luuh03.github.io/portfolio/).
 Por ser responsivo, a aplicação pode ser acessada tanto por dispositivos desktop quanto mobile.
